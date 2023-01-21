@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camp.in - Venha acampar com a gente!</title>
+  </head>
+
+  <body>
+    <main>
+      <img src="img/logo.svg" alt="Camp.in" class="logo" />
+      <div id="bg-login">
+        <div id="login">
+          <div class="title">
+            <section>
+              <img src="img/log-in.svg" alt="Login" />
+              <h1>Faça o seu login</h1>
+            </section>
+            <section><p>Entre com suas informações de cadastro</p></section>
+          </div>
+          <form action="" method="POST">
+            <label for="email">E-mail</label><br />
+            <div id="input-box-email" class="input-box">
+              <img src="img/mail.svg" id="email-icon" class="icon" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+            <br />
+            <label for="password">Senha</label><br />
+            <div id="input-box-password" class="input-box">
+              <img src="img/lock.svg" id="password-icon" class="icon" />
+              <input
+                name="password"
+                type="password"
+                id="password"
+                placeholder="Digite sua senha"
+              /><button type="button" onclick="changeType()">
+                <img src="img/eye.svg" class="eyepassword" />
+              </button>
+            </div>
+            <br />
+            <div class="addoptions">
+              <div class="remember-me">
+                <input
+                  type="checkbox"
+                  name="keep-login"
+                  id="keep-login"
+                  class="checkbox"
+                /><label for="keep-login" class="custom-checkbox"></label>
+                <p class="remember-me">Lembre-me</p>
+              </div>
+              <a href="#"><p>Esqueci minha senha</p></a>
+            </div>
+          </form>
+          <button type="submit" class="login-btn">ENTRAR</button>
+          <a href="#" id="create-acc"
+            ><p>Não tem conta? <b>Registre-se</b></p></a
+          >
+        </div>
+      </div>
+    </main>
+    <img
+      id="bg-img"
+      src="img/side-image-2x.jpg"
+      alt="Camp.in - Venha acampar com a gente!"
+    />
+    <script src="scripst.js"></script>
+  </body>
+</html>
